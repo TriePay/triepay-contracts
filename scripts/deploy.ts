@@ -154,12 +154,22 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Greeter = await ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy("Hello, Hardhat!");
-
-  await greeter.deployed();
-
-  console.log("Greeter deployed to:", greeter.address);
+  const chainId: number = (await ethers.provider.getNetwork()).chainId;
+  const chainName: string =
+    Object.keys(deployConfig).find(
+      (chainName) => deployConfig[chainName].chainId === chainId
+    ) || "";
+  const chainConfig: ChainConfig = deployConfig[chainName];
+  const TriePay = await ethers.getContractFactory("TriePay");
+  const triePay = await TriePay.deploy(
+    chainConfig.feeRate,
+    chainConfig.chainId,
+    chainConfig.routerAddress,
+    chainConfig.tokens,
+    chainConfig.routerTokens
+  );
+  await triePay.deployed();
+  console.log("TriePay deployed to:", triePay.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
