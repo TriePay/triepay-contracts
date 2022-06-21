@@ -29,7 +29,7 @@ const deployConfig: DeployConfig = {
       "0x6b175474e89094c44da98b954eedeac495271d0f", // dai
       "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984", // uni
 
-      "0xB8c77482e45F1F44dE1745F52C74426C631bDD52", // bnb
+      // "0xB8c77482e45F1F44dE1745F52C74426C631bDD52", // bnb
       "0x4Fabb145d64652a948d72533023f6E7A623C7C53", // busd
       "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599", // wbtc
       "0x514910771AF9Ca656af840dff83E8264EcF986CA", // link
@@ -78,10 +78,10 @@ const deployConfig: DeployConfig = {
       "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619", // weth
       "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270", // wmatic
 
-      "0x3BA4c387f786bFEE076A58914F5Bd38d668B42c3", // bnb
-      "0xdAb529f40E671A1D4bF91361c21bf9f0C9712ab7", // busd
+      // "0x3BA4c387f786bFEE076A58914F5Bd38d668B42c3", // bnb
+      // "0xdAb529f40E671A1D4bF91361c21bf9f0C9712ab7", // busd
       "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063", // dai
-      "0xb0897686c545045aFc77CF20eC7A532E3120E0F1", // link
+      // "0xb0897686c545045aFc77CF20eC7A532E3120E0F1", // link
     ],
     routerTokens: [
       "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", // usdc
@@ -129,7 +129,7 @@ const deployConfig: DeployConfig = {
       "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E", // dai
       "0x049d68029688eAbF473097a2fC38ef61633A3C7A", // fusdt
 
-      "0xe1146b9AC456fCbB60644c36Fd3F868A9072fc6E", // fbtc
+      // "0xe1146b9AC456fCbB60644c36Fd3F868A9072fc6E", // fbtc
       "0x658b0c7613e890EE50B8C4BC6A3f41ef411208aD", // feth
       "0x321162Cd933E2Be498Cd2267a90534A804051b11", // btc
     ],
